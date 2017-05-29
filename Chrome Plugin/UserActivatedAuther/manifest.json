@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "OSBot User Activated Auther",
+   "permissions": [
+    "storage"
+  ],
+  "version": "1.00",
+  "content_scripts": [ 
+  {
+    "matches": ["https://osbot.org/*"],
+    "js": ["jquery-3.2.1.min.js","userActivatedAuthsInternal.js"]
+  }, 
+  {
+	"matches": ["http://website.com/plugin/*"],
+	"js": ["jquery-3.2.1.min.js","userActivatedAuthsExternal.js"]
+  }]
+}
